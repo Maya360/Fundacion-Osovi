@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", page_onload);
 
+//El codigo de validaciones funciona en 3 paginas (Donaciones, Voluntariado y la pagina de Contacto)
+
 function page_onload() {
-    const forms = document.querySelectorAll(".donacion-form, .formulario-voluntariado");
+    const forms = document.querySelectorAll(".donacion-form, .formulario-voluntariado, .contact-form");
     forms.forEach(form => {
         form.addEventListener("submit", onForm_submit);
     });
@@ -36,7 +38,7 @@ function validateForm(form) {
             errorElement.innerHTML = `El campo ${inp.name} es obligatorio.`;
             isValid = false;
         } else if (inp.name === "name" && !validateName(inp.value)) {
-            errorElement.innerHTML = `El nombre debe tener al menos 3 letras y no debe contener letras repetidas más de 3 veces.`;
+            errorElement.innerHTML = `El nombre/apellido deben tener al menos 3 letras y no debe contener letras repetidas más de 3 veces.`;
             isValid = false;
         } else if (inp.type === "email" && !validateEmail(inp.value)) {
             errorElement.innerHTML = `El formato del correo no es válido.`;
