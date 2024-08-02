@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(120, 93, 65);
+    color: white;
+}
+
+header h1 {
+    margin: 0.5rem 1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:none;
+    background-color: white;
+    color: black;
+    padding: 6px 16px;
+    display: inline-block;
+    font-size: 17px;
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10%;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(153, 115, 74);
+    color: white;
+}
+
+header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(153, 115, 74);
+    color: black;
+}
+
+
+header2 div {
+    display: flex;
+    align-items: center;
+}
+
+header2 nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header2 nav ul li {
+    margin: 0 10px;
+}
+
+header2 nav ul li a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:none;
+    background-color: rgb(153, 115, 74);
+    color: white;
+    padding: 6px 16px;
+    display: inline-block;
+    font-size: 17px;
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header2 nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+.contenedor-evento{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.contenedor-evento h3.year{
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+
+}
+
+.contenedor-evento .evento{
+
+     box-shadow:  0 4px 16px -8px rgba(0,0,0,0.4);
+     display: flex;
+     border-radius: 8px;
+     margin: 32px 0;
+
+}
+
+.evento .evento-izquierda{
+
+    background-color: #ce8243 ;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px ;
+    font-weight: bold;
+    text-align: center;
+    border-radius:  8px 0 0 8px;
+}
+
+.contenedor-evento img {
+    padding-right: 5px;
+    width: 23px;
+    height: 25px;
+}
+
+.evento .evento-izquierda .fecha{
+    font-size:  56px;
+}
+
+.evento .evento-izquierda .mes{
+    font-size:  16px;
+    font-weight: normal;
+}
+
+.evento .evento-derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:  0 24px;
+}
+
+.evento .evento-derecha h3.titulo-evento{
+    font-size: 24 px;
+    margin: 24px;
+    margin: 24px 0 10px 0;
+    color: rgb(110, 63, 45);
+    text-transform: uppercase;
+}
+
+.evento .evento-derecha .tiempo{
+    background-color: bisque;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin:  24px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 550px){
+    .evento{
+        flex-direction: column;
+    }
+    .evento .evento-izquierda{
+        padding: 0px;
+        border-radius: 8px 8px 0 0 ;
+    }
+    .evento .evento-izquierda .evento-fecha .fecha, .evento .evento-izquierda .evento-fecha .mes{
+        display: inline-block;
+        font-size: 24px ;
+    }
+    .evento .evento-izquierda .evento-fecha{
+        padding: 10px 0;
+    }
+}
+
+
+
+
+.evento{
+    transition: transform 0.3s ease 0.2s;
+    transform: scale(1); 
+}
+.evento:hover {
+    transform: scale(1.10); 
+}
+footer {
+    
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(153, 115, 74);;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

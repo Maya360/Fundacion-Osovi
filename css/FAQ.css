@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(120, 93, 65);
+    color: white;
+}
+
+header h1 {
+    margin: 0.5rem 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 6px 16px;
+    display: inline-block;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10%;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(153, 115, 74);
+    color: white;
+}
+
+header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(153, 115, 74);
+    color: black;
+}
+
+header2 div {
+    display: flex;
+    align-items: center;
+}
+
+header2 nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header2 nav ul li {
+    margin: 0 10px;
+}
+
+header2 nav ul li a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    background-color: rgb(153, 115, 74);
+    color: white;
+    padding: 6px 16px;
+    display: inline-block;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header2 nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+body {
+background-color: #e7e7e7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(153, 115, 74);
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.square {
+    background-color: white;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 10px;
+    padding-bottom: 150px;
+}
+
+.square h2 {
+    font-size: 60px;
+}
+
+.card {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    max-width: 2000px;
+    min-width: 100px;
+    min-height: 100px;
+
+    border-radius: 15px;
+    box-shadow:  0 4px 16px -8px rgba(78, 78, 78, 0.4);
+    border-bottom: 1px solid #b1b1b1;
+    background-color: white;
+}
+
+.card p {
+    flex: 1 0 auto;
+    padding: 4rem;
+    font-size: 1rem;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+ 
+}
+
+.card h3 {
+    margin: 0px;
+    background-color: #c78e60;
+    color: #ffffff;
+    padding-bottom: 20px;
+    font-size: 25px;
+    box-shadow:  0 4px 16px -8px rgba(71, 71, 71, 0.4);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.texto {
+    font-size: 40px;
+}
+
+.textosub {
+    font-size: 25px;
+}
+
+.squarex {
+    background-color: white;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 10px;
+    padding-bottom: 150px;
+}
+
+.squarex img {
+    height: 700px;
+    width: 100%px;
+    height: auto;
+    max-height: 500px;
+}
+
+.squarex button {
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 30px;
+    padding: 0.5%;
+    background-color: rgb(153, 115, 74);
+    color: white;
+    border: none;
+}
+@media (max-width: 768px) {
+    .squarex img {
+        max-height: 400px; 
+    }
+
+    .squarex button {
+        font-size: 1.2rem;
+        padding: 0.5rem 0.8rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .squarex img {
+        max-height: 300px; 
+    }
+
+    .squarex button {
+        font-size: 1rem; 
+        padding: 0.4rem 0.6rem;
+    }
+
+
+
+}
+
+
+
+.card {
+    transition: transform 0.3s ease 0.2s;
+    transform: scale(1); 
+}
+.card:hover {
+    transform: scale(1.10); 
+}

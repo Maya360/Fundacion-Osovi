@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación OSOVI - Voluntariado</title>
+    <link rel="stylesheet" href="css/Voluntariado.css">
+    <script defer src="js/validaciones.js"></script>
+    <link rel="stylesheet" href="css/animacionLoading .css">
+    <script defer src="js/animacionLoading.js"></script>
+
+</head>
+<body>
+
+  <aside class="loader-container" id="loader-container">
+        <div class="loader"></div>
+        <div class="loading-text">Cargando...</div>
+    </aside>
+
+    <header>
+        <div class="logo-container">
+            <img src="Imagenes/OSOVI.jpeg" alt="Logo">
+            <h1>Fundación OSOVI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Donar.html">Donar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header2">
+        <nav class="navegar">
+            <ul class="menu">
+                <li><a href="PaginaInicio.html">Inicio</a></li>
+                <li><a href="ProyMacon.html">Proyecto Macon</a></li>
+                <li><a href="REHAB.html">Proyectos Rehabilitacion</a></li>     
+                <li><a href="Voluntariado.html">Voluntariado</a></li>
+                <li><a href="Contacto.html">Contactanos</a></li>
+                <li><a href="CalendarioEventos.html">Calendario de Eventos</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Historia.html">Historia</a></li>
+                <li><a href="MisionVision.html">Mision y Vision</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero-content">
+            <h2>Conviértete en Voluntario</h2>
+            <p>Únete a nuestra misión de ayudar a quienes más lo necesitan. Como voluntario, podrás participar en diversos programas y actividades que tienen un impacto directo en la vida de las personas.</p>
+        </section>
+
+        <section class="voluntariado">
+            <div class="galeria">
+                <div class="imagen">
+                    <img src="Imagenes/ayuda eventos.jpg" alt="Voluntariado 1">
+                    <p>Ayuda en eventos comunitarios</p>
+                </div>
+                <div class="imagen">
+                    <img src="Imagenes/apoyo en centros.jpg" alt="Voluntariado 2">
+                    <p>Apoyo en centros de rehabilitación</p>
+                </div>
+                <div class="imagen">
+                    <img src="Imagenes/actividades recreativas.jpg" alt="Voluntariado 3">
+                    <p>Actividades recreativas para niños</p>
+                </div>
+            </div>
+
+            <h3>Formulario de Inscripción</h3>
+            <form class="formulario-voluntariado">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                <div id="errorName" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <div id="errorCorreo" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <div id="errorTelefono" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">¿Por qué quieres ser voluntario?</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <div id="errorMensaje" class="error-message"></div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>"No podemos asegurar mejor nuestra felicidad que viviendo y muriendo en el servicio de los pobres."</p>
+    </footer>
+</body>
+</html>

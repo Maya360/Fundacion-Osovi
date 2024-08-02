@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cdcdd8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #785d41;
+    color: white;
+}
+
+header h1 {
+    margin: 0.5rem 1rem;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #433e3e;
+    color: white;
+}
+
+.header2 {
+    background-color: #996b4a;
+    padding: 10px 0;
+}
+
+.header2 nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header2 nav ul li {
+    margin: 0 10px;
+}
+
+.header2 nav ul li a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header2 nav ul li a:hover {
+    background-color: #785d41;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    background-color: #ffffff;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.donaciones {
+    text-align: center;
+    padding: 20px;
+}
+
+.donacion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donacion-form label {
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.donacion-form input,
+.donacion-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #785d41;
+}
+
+footer p {
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+@media (max-width: 768px) {
+    header, .header2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul, .header2 nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li, .header2 nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero-content h2, .Mision-vision h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p, .Mision-vision p {
+        font-size: 16px;
+    }
+}
