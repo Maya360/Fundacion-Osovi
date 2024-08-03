@@ -3,7 +3,6 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
 body {
     
     margin: 0;
@@ -64,7 +63,7 @@ header nav ul li a:hover {
     color: white;
 }
 
-header2{
+header2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,24 +108,21 @@ header2 nav ul li a:hover {
 }
 
 .container {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .slide-wrapper {
     position: relative;
-    max-width: 48rem;
+    max-width: 75rem;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .slider {
     display: flex;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
+    width: 60%;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
-    animation: fade-up 1s;
 }
 
 .slider img {
@@ -135,7 +131,6 @@ header2 nav ul li a:hover {
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
-    
 }
 
 .slider-nav {
@@ -152,17 +147,26 @@ header2 nav ul li a:hover {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: black;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
 }
 
 .slider-nav a:hover {
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-80%); }
+    50% { transform: translateX(-160%); }
+    75% { transform: translateX(-240%); }
+    100% { transform: translateX(-330%); }
+}
 
-
+.slider {
+    animation: slide 15s infinite;
+}
 
 .acordeon li{
     list-style: none;
@@ -178,19 +182,16 @@ header2 nav ul li a:hover {
     font-weight: 900;
 }
 
-
-
-
 .init{
-    margin-top: 250px;
-text-align: center;
+    margin-top: 150px;
+    text-align: center;
     align-items:center ;
     padding: 10px;
-   margin-left:200px ;
-   margin-right:200px ;
+    margin-left:200px ;
+    margin-right:200px ;
     cursor: pointer;
     background-color:#f5eee5 ;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 .init img{
 max-width: 100%;
